@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+h1, h2, h3 {
+    color: #2e8b57; /* Light green color */
+}
+
+.header {
+    background-color: #e0f7fa; /* Light blue for header */
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #b2ebf2; /* Light blue for hero section */
+    padding: 50px;
+    text-align: center;
+}
+
+.about, .research, .team, .contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #e0f7fa; /* Light blue for footer */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

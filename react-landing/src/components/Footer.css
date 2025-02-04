@@ -1,0 +1,87 @@
+.footer {
+    padding: 4rem 2rem 2rem;
+    background: linear-gradient(135deg, #1a73e8 0%, #34a853 100%);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.footer-section h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.contact-info p {
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-info p:hover {
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    color: #34a853;
+}
+
+.footer-section h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.footer-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #34a853;
+    transition: width 0.3s ease;
+}
+
+.footer-section:hover h4::after {
+    width: 60px;
+}
+
+.social-link {
+    font-size: 1.4rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+    .footer-section h3 {
+        font-size: 1.6rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+
+    .footer-section h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

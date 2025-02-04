@@ -1,0 +1,88 @@
+.research-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #e6f3ff 0%, #f1f8f2 100%);
+    min-height: 100vh;
+}
+
+.research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.research-container h2 {
+    color: #1a73e8;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.pdf-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+}
+
+.pdf-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.view-button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.pdf-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 90%;
+    height: 90vh;
+    background: white;
+    border-radius: 12px;
+    position: relative;
+    padding: 1rem;
+}
+
+.close-button {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
